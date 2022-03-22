@@ -1,0 +1,758 @@
+body {
+    font-family: "proxima-nova",sans-serif;
+  background-color:#f6f6f6;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: "proxima-nova",sans-serif;
+}
+html{
+  font-size:100%;
+}
+.header{
+    position:fixed;
+    width:100%;
+    background-color:rgba(101, 101, 101, 0.7);
+    z-index:2;
+}
+.wrapper{
+
+
+display:flex;
+justify-content:space-evenly;
+width:80%;
+margin:auto;
+margin-top:35px;
+}
+.wraper-vis{
+  display:flex;
+ 
+}
+.wrapper a{
+    text-decoration:none;
+}
+.wrapper ul li{
+    display:inline;
+    margin-right: 3rem;
+    color:white;
+    font-weight:600;
+    font-size:12px;
+}
+.USA-li{
+    background-color:white;
+    padding:5px 20px;
+    color:black;
+}
+.USA-C{
+    color:black;
+}
+.EN-li{
+    border:2px solid rgb(209, 132, 132);
+    padding:5px 8px;
+    background:transparent;
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Starting Slider*/
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    filter:brightness(65%);
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+   
+    
+  }
+  
+  .slide.current {
+    opacity: 1;
+  }
+  
+  .slide .content {
+    position: absolute;
+    bottom: 70px;
+    left:0;
+    opacity: 0;
+    width: 100%;
+    margin-left:0%;
+    
+    background:transparent;
+    color: white;
+    padding: 35px;
+    text-align:center;
+    
+  }
+  
+  .slide .content h1 {
+    margin-bottom: 10px;
+  }
+
+  .slide.current .content {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-in-out 0.6s;
+  }
+  
+  .buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+  }
+  
+  .buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+  }
+  
+  .buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+  }
+  
+  .buttons button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  @media (max-width: 500px) {
+    .slide .content {
+      bottom: -300px;
+      left: 0;
+      width: 100%;
+    }
+  
+    .slide.current .content {
+      transform: translateY(-300px);
+    }
+  }
+  /* Backgorund Images */
+ 
+.slide:first-child {
+    background: url('https://galeon.pl/wp-content/uploads/2015/08/13.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(2) {
+    background: url('https://galeon.pl/wp-content/uploads/2015/08/23.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(3) {
+    background: url('https://galeon.pl/wp-content/uploads/2015/08/33.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(4) {
+    background: url('https://galeon.pl/wp-content/uploads/2015/08/43.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(5) {
+    background: url('https://galeon.pl/wp-content/uploads/2015/08/52.jpg') no-repeat
+      center top/cover;
+  } 
+  .slide:nth-child(6)  {
+    background: url('https://galeon.pl/wp-content/uploads/2015/08/33.jpg') no-repeat
+      center center/cover;
+  }
+  .slide .content p{
+    color:white;
+    font-weight:600;
+    font-size:2rem;
+   
+}
+
+  /*Here ends starting slider*/
+.link-box:hover{
+    filter:brightness(65%);
+
+}
+.link-box{
+    text-decoration:none;
+}
+  .second-wrap{
+      width:70%;
+      margin:auto;
+      margin-top:90px;
+      display:flex;
+      
+  }
+  .second-box-wrap{
+      width:70%;
+      margin:auto;
+      display:flex;
+  }
+  .boxes-wrap{
+      width:70%;
+  }
+  .second-box{
+   background-image: url("https://galeon.pl/wp-content/uploads/2022/03/0C7A1418.jpg");
+   background-size:cover;
+   background-position:center;
+   background-repeat:no-repeat;
+   height:55vh;
+   width:70%;
+  }
+  .third-box{
+      display:flex;
+      width:30%;
+      height:55vh;
+     
+     
+  }
+  .second-box p{
+color:white;
+font-size:14px;
+line-height:24px;
+
+padding:40px;
+padding-left:50px;
+padding-bottom:20px;
+  }
+  .second-box h2{
+      font-size:2.5rem;
+      color:green;
+     padding-left:50px;
+     
+     
+  }
+  .boxes-wrap{
+      display:flex;
+  }
+  .yacht-box{
+      width:33.3%;
+      height:25vh;
+      
+  }
+  .yacht-box-4{
+     
+      width:30%;
+      background-image: url(https://galeon.pl/wp-content/uploads/2022/03/mini-545x545.jpg);
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      color:white;
+  }
+.yacht-box h2{
+    padding:40px;
+    padding-bottom:10px;
+    text-decoration:underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
+.yacht-box p{
+    padding:40px;
+    padding-top:10px;
+    font-weight:400;
+}
+  .yacht-box-1{
+    background-image: url(https://galeon.pl/wp-content/uploads/2015/08/events_mini.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+   
+  }
+  .yacht-box-2{
+    background-image: url(https://galeon.pl/wp-content/uploads/2015/08/31.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white;
+}
+  .yacht-box-3{
+    background-image: url(https://galeon.pl/wp-content/uploads/2015/08/4144.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+.third-box-1 h2{
+    font-size:2.5rem;
+    color:green;
+   padding-left:50px;
+}
+.third-box-1 p{
+    color:white;
+    font-size:14px;
+    line-height:24px;
+    
+    padding:40px;
+    padding-left:50px;
+    padding-bottom:20px;
+}
+  .third-box-1{
+    background-image: url(https://galeon.pl/wp-content/uploads/2022/02/mini-1.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    height:55vh;
+   
+  }
+ .yacht-box-4 p{
+    padding:40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight:400;
+ }
+ .yacht-box-4 h2{
+    font-size:1.5rem;
+    color:green;
+   padding-left:50px;
+ }
+
+
+
+ .galeon-range{
+     background-image:URL("https://galeon.pl/wp-content/uploads/2015/08/12.jpg");
+     background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    height:65vh;
+    margin-top:100px;
+    text-align:center;
+    color:white;
+    position:relative;
+ }
+ .galeon-range h3{
+font-size:3rem;
+padding-top:80px;padding-bottom:60px;
+font-weight:100;
+text-decoration:underline;
+text-decoration-color: rgb(171, 98, 98);
+text-decoration-thickness: 3px;
+ }
+ .galeon-range button{
+     padding:10px 40px;
+     font-size:1.5rem;
+     border:none;
+     background-color:rgba(0, 0, 0, 0.388);
+     color:white;
+     position:absolute;
+     bottom:0;
+     width:20%;
+     left:40%;
+     bottom:70px;
+ }
+
+ .type{
+     display:flex;
+     justify-content:center;
+     gap:30px;
+ }
+ .type a{
+     text-decoration:none;
+     color:rgb(44, 44, 44);
+ }
+ .type-yachts img{
+     margin-top:40px;
+ }
+ .type-yachts h3{
+     font-size:1.5rem;
+     margin-top:20px;
+ }
+ .type-yachts p{
+     margin-top:20px;
+     font-size:1rem;
+     line-height:22px;
+     
+ }
+ .type-yachts:hover{
+    filter:brightness(30%);
+ }
+ #ha2{
+     text-align:center;
+     font-size:3rem;
+     font-weight:10;
+     margin-top:50px;
+     margin-bottom:50px;
+ }
+ .company{
+     display:flex;
+     justify-content: center;
+     gap:30px;
+ }
+
+ .company-caption{
+     width:20%;
+     line-height:20px;
+     font-size:15px;
+     position:relative;
+ }
+ .company-caption button{
+     padding:5px 50px;
+     position:absolute;
+     bottom:10px;
+     left:10px;
+     background:transparent;
+ }
+ .company-caption-2{
+     width:40%;
+   
+ }
+
+ .club{
+     display:flex;
+     justify-content: center;
+     margin-top:100px;
+ }
+ .club-box{
+     width:20%;
+     height:30vh;
+ }
+ .club-box:hover{
+     filter:brightness(70%);
+ }
+ .club a{
+     text-decoration:none;
+     color:black;
+ }
+ .club-box h3{
+     padding:30px;
+ }
+ .club-box p{
+     padding-left:30px;
+ }
+ .club-box-1{
+    background-image: url(https://galeon.pl/wp-content/themes/galeon/_/img/company-owners-club.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+ }
+ .club-box-2{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-image: url(https://galeon.pl/wp-content/themes/galeon/_/img/company-winterizing.jpg);
+ }
+ .club-box-3{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-image: url(https://galeon.pl/wp-content/themes/galeon/_/img/company_cnc.jpeg);
+ }
+ .club-box-4{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-image: url(https://galeon.pl/wp-content/themes/galeon/_/img/company-partners.jpg);
+ }
+
+
+ .dealer{
+     display:block;
+   
+    
+     width:100%;
+     text-align:center;
+     height:50vh;
+     background-size:cover;
+     background-position:center;
+     background-repeat:no-repeat;
+     background-image:URL("https://galeon.pl/wp-content/themes/galeon/_/img/dealer-map.jpg");
+ }
+
+ .select-dealer{
+    padding:15px 0px;
+    background-color:black;
+    color:white;
+    margin-top:60px;
+    width:25%;
+
+ }
+ .dealer h3{
+     font-size:3rem;
+     padding-top:50px;
+     padding-bottom:50px;
+ }
+ #ha3{
+     text-align:center;
+     font-size:3rem;
+     margin-bottom:70px;
+ }
+ .contact-wrap{
+     display:flex;
+     justify-content: center;
+     gap:100px;
+    
+ }
+ .footer-wrap{
+     width:100%;
+     display:flex;
+     justify-content: center;
+     gap:100px;
+     background-color:black;
+     color:white;
+     padding-top:50px;
+     padding-bottom:50px;
+     margin-top:50px;
+    
+ }
+ .footer-s{
+    color:grey;
+ }
+ .footer-wrap li{
+     list-style: none;
+     font-size:14px;
+     margin-top:10px;
+    
+ }
+ .footer-wrap a{
+    text-decoration:none;
+    color:white;
+ }
+
+
+.menu{
+  padding:5px 13px;
+  background:transparent;
+  border:1px solid white;
+  color:white;
+  visibility:hidden;
+  height:150%;
+}
+
+ @media only screen and (max-width:1080px) {
+  .wrapper ul li{
+ display:block;
+
+  }
+  .wrapper{
+
+
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:5px;
+    }
+    .menu{
+      visibility:visible;
+    }
+    .header{
+      position:fixed;
+      width:100%;
+      background-color:rgba(49, 45, 45, 0.551);
+      z-index:2;
+  }
+  .wraper-vis{
+    visibility:hidden;
+  }
+
+  .second-wrap{
+    width:90%;
+    margin:auto;
+    margin-top:90px;
+    display:flex;
+    
+}
+.boxes-wrap{
+  width:90%;
+}
+.second-box-wrap{
+  width:90%;
+  margin:auto;
+  display:flex;
+}
+.type{
+display:block;
+  
+text-align:center;
+gap:0px;
+}
+.type-yachts{
+width:100%;
+}
+.company{
+  display:block;
+  justify-content: center;
+  gap:30px;
+  text-align:center;
+}
+.company-caption{
+  width:100%:
+
+}
+.company-caption-2{
+  width:100%;
+  margin-top:50px;
+
+}
+.company-caption{
+  width:80%;
+  margin:auto;
+  line-height:20px;
+  font-size:15px;
+  position:relative;
+  padding-bottom:100px;
+}
+.club{
+  display:flex;
+  justify-content: center;
+  margin-top:100px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.club-box{
+  width:50%;
+  height:30vh;
+}
+.contact-wrap{
+  display:flex;
+  justify-content: center;
+  margin-top:100px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.contact-box{
+  width:40%;
+}
+.footer-wrap{
+  display:flex;
+  justify-content:center;
+  margin-top:100px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.footer-box{
+  width:40%;
+}
+.select-dealer{
+  padding:15px 0px;
+  background-color:black;
+  color:white;
+  margin-top:60px;
+  width:80%;
+
+}
+.company-caption button{
+  padding:5px 100px;
+  position:static;
+  margin-top:40px;
+  bottom:10px;
+  left:10px;
+  background:transparent;
+}
+}
+
+@media only screen and (max-width:1000px) {
+
+  .second-wrap{
+    width:100%;
+    margin:auto;
+    margin-top:90px;
+    display:flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    
+}
+.second-box{
+  width:100%;
+}
+.third-box{
+  width:100%;
+}
+.second-box-wrap{
+  width:100%;
+  margin:auto;
+  margin-top:0px;
+  display:flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.boxes-wrap{
+  width:100%;
+}
+.yacht-box-1s{
+  width:33%;
+}
+.yacht-box-2{
+  width:33%;
+}
+.yacht-box-3{
+  width:33%;
+}
+.yacht-box-4{
+  width:100%;
+  height:40vh;
+}
+.yacht-box p{
+  padding:10px;
+  padding-top:10px;
+  font-weight:400;
+}
+.yacht-box h2{
+  padding:10px;
+  padding-bottom:10px;
+  text-decoration:underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
+}
+html{
+  font-size:60%;
+}
+}
+
+
+
+@media only screen and (max-width:550px) {
+#galeon-logo{
+  display:none;
+}
+  .galeon-range button{
+    padding:10px 10px;
+    font-size:1.5rem;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.388);
+    color:white;
+    position:absolute;
+    bottom:0;
+    width:60%;
+    left:20%;
+    bottom:70px;
+}
+
+
+}
